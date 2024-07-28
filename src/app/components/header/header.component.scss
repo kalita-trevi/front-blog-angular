@@ -1,8 +1,28 @@
-div {
-  border: 3px solid red;
-  border-radius: 10px;
-}
+.header {
+  background: #333;
 
-h1 {
-  text-align: center;
+  &-conteiner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    color: white;
+
+    ul {
+      display: inline-flex;
+      gap: 1rem;
+      list-style: none;
+
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+
+          &:hover {
+            color: red;
+          }
+        }
+      }
+    }
+  }
 }
