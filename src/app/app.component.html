@@ -1,8 +1,13 @@
 <body>
   <app-header />
   <div class="posts-container container">
-    <app-card />
-    <app-card />
+    <app-card
+      *ngFor="let post of posts"
+      [title]="post.title"
+      [data]="post.data"
+      [author]="post.author"
+      [thumbnail]="post.thumbnail"
+    />
   </div>
   <app-footer />
 </body>

@@ -9,13 +9,10 @@
     height: 5rem;
 
     h1 {
-      color: rgb(0, 0, 0);
-    }
-    input {
-      border: 2px solid rgb(0, 0, 0);
-      border-radius: 10px;
-      padding: 10px;
-      color: rgb(115, 5, 5);
+      font-size: 40px;
+      background: rgb(3, 3, 3);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     ul {
