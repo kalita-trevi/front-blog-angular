@@ -5,7 +5,10 @@
       *ngFor="let escritora of escritoras"
       [src]="escritora.thumbnail"
       [alt]="escritora.escritora"
-      [ngStyle]="{ 'border-color': escritora.cor }"
+      [ngStyle]="{
+        'border-color': escritora.bordaCor,
+        'box-shadow': '6px 6px 15px ' + escritora.boxShadow
+      }"
     />
   </div>
 </div>

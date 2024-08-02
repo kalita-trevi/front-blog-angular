@@ -9,6 +9,15 @@
   padding: 1rem;
 
   img {
+    max-height: 400px;
+    object-fit: cover;
     border-radius: 16px;
+  }
+  p {
+    color: rgb(154, 5, 30);
+    font-weight: 300;
+  }
+  a {
+    color: rgb(6, 245, 245);
   }
 }

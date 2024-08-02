@@ -1,5 +1,6 @@
 .footer {
   background: linear-gradient(to right, #b82891, #a6309e);
+  box-shadow: 6px 6px 25px rgb(247, 214, 1);
 
   &-container {
     display: flex;
@@ -7,6 +8,17 @@
     color: white;
     padding-top: 2rem;
     padding-bottom: 2rem;
+  }
+
+  &-container-logo {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.5s ease;
   }
 
   &-container-cards {

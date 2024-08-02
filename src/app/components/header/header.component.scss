@@ -1,6 +1,6 @@
 .header {
   background: linear-gradient(to right, #b82891, #a6309e);
-  box-shadow: 6px 6px 15px rgba(255, 255, 255, 0.731);
+  box-shadow: 6px 6px 25px rgba(247, 214, 1, 0.668);
 
   &-conteiner {
     display: flex;
@@ -8,11 +8,10 @@
     align-items: center;
     height: 5rem;
 
-    h1 {
-      font-size: 40px;
-      background: rgb(3, 3, 3);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    img {
+      height: 6rem;
+      top: -20px;
+      position: absolute;
     }
 
     ul {

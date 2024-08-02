@@ -1,7 +1,8 @@
 <header class="header">
   <div class="header-conteiner container">
-    <H1>{{ title }}</H1>
-
+    <div>
+      <img src="/logo.png" alt="" />
+    </div>
     <ul>
       <li *ngFor="let menu of menus">
         <a [href]="menu.link">{{ menu.title }}</a>

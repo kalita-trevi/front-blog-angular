@@ -5,7 +5,8 @@ export interface Escritora {
   escritora: string;
   thumbnail: string;
   link: string;
-  cor: string;
+  bordaCor: string;
+  boxShadow: string;
 }
 
 @Component({
