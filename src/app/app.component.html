@@ -1,5 +1,6 @@
 <body>
-  <app-header />
+  <app-header [title]="title" [menus]="menus" />
+  <app-escritoras [escritoras]="escritoras" />
   <div class="posts-container container">
     <app-card
       *ngFor="let post of posts"

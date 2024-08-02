@@ -1,0 +1,35 @@
+.section-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+
+  h1 {
+    font-size: 40px;
+  }
+
+  &-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+
+    img {
+      border: 2px solid rgb(232, 7, 253);
+      width: 100%;
+      max-width: 100px;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      transition: all 0.5s ease;
+      &:hover {
+        transform: scale(1.1);
+        background: rgb(255, 255, 255);
+        box-shadow: 6px 6px 15px rgba(184, 127, 204, 0.998);
+        color: rgb(238, 26, 210);
+        cursor: pointer;
+      }
+    }
+  }
+}

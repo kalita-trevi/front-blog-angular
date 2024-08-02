@@ -1,0 +1,11 @@
+<div class="section-container container">
+  <h1>Top escritoras</h1>
+  <div class="section-container-images">
+    <img
+      *ngFor="let escritora of escritoras"
+      [src]="escritora.thumbnail"
+      [alt]="escritora.escritora"
+      [ngStyle]="{ 'border-color': escritora.cor }"
+    />
+  </div>
+</div>

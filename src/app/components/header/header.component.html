@@ -3,8 +3,9 @@
     <H1>{{ title }}</H1>
 
     <ul>
-      <li><a>inicio</a></li>
-      <li><a>Sobre</a></li>
+      <li *ngFor="let menu of menus">
+        <a [href]="menu.link">{{ menu.title }}</a>
+      </li>
     </ul>
   </div>
 </header>
