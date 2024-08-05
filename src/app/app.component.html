@@ -1,6 +1,15 @@
 <body>
   <app-header [title]="title" [menus]="menus" />
-  <app-escritoras [escritoras]="escritoras" />
+  <app-escritoras
+    [escritoras]="escritoras"
+    (escritoraSelecionada)="escolherEscritora($event)"
+  />
+  <app-card2
+    *ngIf="detalhesEscritoraIsVisible"
+    [description]="escritoras[escritoraIndex].detailDescription"
+    [thumbnail]="escritoras[escritoraIndex].detailThumbnail"
+    [title]="escritoras[escritoraIndex].escritora"
+  />
   <div class="posts-container container">
     <app-card
       *ngFor="let post of posts"

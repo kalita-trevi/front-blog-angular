@@ -1,6 +1,6 @@
 .header {
-  background: linear-gradient(to right, #b82891, #a6309e);
-  box-shadow: 6px 6px 25px rgba(247, 214, 1, 0.668);
+  background-image: linear-gradient(to right, #b82891, #a6309e);
+  box-shadow: 6px 6px 25px rgba(131, 4, 243, 0.687);
 
   &-conteiner {
     display: flex;
@@ -42,5 +42,14 @@
 @media screen and (max-width: 1024px) {
   .header-conteiner {
     padding: 0 2rem;
+
+    .header-conteiner-logo {
+      display: flex;
+
+      img {
+        max-width: 250px;
+        left: -0.5rem;
+      }
+    }
   }
 }

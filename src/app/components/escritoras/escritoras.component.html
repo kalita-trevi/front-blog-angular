@@ -1,14 +1,15 @@
 <div class="section-container container">
-  <h1>Top escritoras</h1>
   <div class="section-container-images">
+    <!-- Container de imagens com uma diretiva estrutural  que permite iterar sobre um array e criar um teplate para cada item na lista -->
     <img
-      *ngFor="let escritora of escritoras"
+      *ngFor="let escritora of escritoras; let i = index"
       [src]="escritora.thumbnail"
       [alt]="escritora.escritora"
       [ngStyle]="{
         'border-color': escritora.bordaCor,
         'box-shadow': '6px 6px 15px ' + escritora.boxShadow
       }"
+      (click)="escolherEscritora(i)"
     />
   </div>
 </div>

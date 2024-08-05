@@ -1,6 +1,6 @@
 .footer {
-  background: linear-gradient(to right, #b82891, #a6309e);
-  box-shadow: 6px 6px 25px rgb(247, 214, 1);
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8540cd31-521e-44b2-b8dc-9a2a792a63bb/d5yrepg-911c1469-94a3-4b3e-b715-163a1a26836d.png/v1/fit/w_750,h_971/scaris_print_03_by_shaibrooklyn_d5yrepg-375w-2x.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTcxIiwicGF0aCI6IlwvZlwvODU0MGNkMzEtNTIxZS00NGIyLWI4ZGMtOWEyYTc5MmE2M2JiXC9kNXlyZXBnLTkxMWMxNDY5LTk0YTMtNGIzZS1iNzE1LTE2M2ExYTI2ODM2ZC5wbmciLCJ3aWR0aCI6Ijw9NzUwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.YNPRGAhA8lP28mzL-ql4dMaO-C5u7Ehj605L6NYHvx0");
+  box-shadow: 6px 6px 25px rgba(255, 255, 255, 0.522);
 
   &-container {
     display: flex;
@@ -48,6 +48,7 @@
 @media screen and (max-width: 1024px) {
   .footer {
     padding: 0 2rem;
+
     &-container {
       flex-direction: column;
       gap: 2rem;
