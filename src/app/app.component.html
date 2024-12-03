@@ -4,7 +4,7 @@
     [escritoras]="escritoras"
     (escritoraSelecionada)="escolherEscritora($event)"
   />
-  <app-card2
+  <app-detalhes
     *ngIf="detalhesEscritoraIsVisible"
     [description]="escritoras[escritoraIndex].detailDescription"
     [thumbnail]="escritoras[escritoraIndex].detailThumbnail"
