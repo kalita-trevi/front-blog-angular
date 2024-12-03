@@ -1,27 +1,45 @@
-# AngularBlog
+# Blog Monster High
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.1.
+Este é o **Blog Monster High**, uma aplicação em Angular que utiliza o JSON Server para simular uma API com dados sobre as personagens de Monster High.
 
-## Development server
+## Como Rodar o Projeto
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Pré-requisitos
 
-## Code scaffolding
+- Node.js
+- Angular CLI
+- JSON Server
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Passos
 
-## Build
+1. Clone o repositório e instale as dependências:
+2. Inicie o Angular:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+3. Em outro terminal, inicie o JSON Server:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+   ```bash
+   json-server --watch db.json --port 3000
+   ```
 
-## Running end-to-end tests
+4. Acesse:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   - Frontend: [http://localhost:4200](http://localhost:4200)
+   - API: [http://localhost:3000](http://localhost:3000)
 
-## Further help
+## Estrutura da API
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Escritoras
+
+`GET /escritoras` - Lista de escritoras.
+
+### Menus
+
+`GET /menus` - Lista de menus.
+
+### Posts
+
+`GET /posts` - Lista de posts.
